@@ -1,4 +1,5 @@
 # Node.js
+[![Node.js Badge](https://img.shields.io/badge/Node.js-v20.17.0-brightgreen)](https://nodejs.org)
 
 Node.js é uma plataforma poderosa para o desenvolvimento de aplicações do lado do servidor, utilizando JavaScript. Com sua arquitetura assíncrona e orientada a eventos, Node.js permite a criação de aplicações rápidas e escaláveis. Abaixo está um resumo sobre Node.js e sua utilização, especialmente em conjunto com o Visual Studio Code (VS Code).
 
