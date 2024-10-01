@@ -6,6 +6,6 @@ Tanto JavaScript quanto Python suportam POO, mas cada linguagem tem suas própri
 Nesse material estarão disponibilizados recursos para aprender orientação a objetos usando exemplos em Javascript e Python
 
 Sumário
-1. [Documentação Básica de JavaScript](https://github.com/claulis/POO-JS-PY/blob/main/js-basico.md)
-2. [Documentação Básica de Python](https://github.com/claulis/POO-JS-PY/blob/main/py-basico.md)
-3. 
+1. [Documentação Básica de Node.js](https://github.com/claulis/POO-JS-PY/blob/main/node-basico.md)
+2. [Documentação Básica de JavaScript](https://github.com/claulis/POO-JS-PY/blob/main/js-basico.md)
+
