@@ -1,6 +1,6 @@
 # Resumo de JavaScript
 
-## Tipos de dados
+## 1. Tipos de dados
 
 | **Seção**                    | **Descrição**                                                                                      |
 |------------------------------|---------------------------------------------------------------------------------------------------|
@@ -14,7 +14,7 @@
 |                              | - **Object:** Estruturas que contêm propriedades e métodos. Exemplo: `let pessoa = { nome: "João", idade: 25 };` |
 |                              | - **Array:** Coleções de elementos indexados. Exemplo: `let frutas = ["maçã", "banana"];`       |
 
-## Variáveis e constantes 
+## 2. Variáveis e constantes 
 
 As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para entender como gerenciar variáveis na linguagem. Cada um desses identificadores possui características específicas que influenciam seu comportamento em termos de escopo, reatribuição e hoisting.
 
@@ -26,26 +26,26 @@ As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para
 | **Hoisting**               | Variáveis são içadas para o topo do escopo e inicializadas como `undefined`. | Variáveis são içadas, mas não inicializadas, resultando em ReferenceError se acessadas antes da declaração. | Também sofre hoisting, mas não pode ser acessada antes da declaração. |
 | **Uso recomendado**        | Evitar em código moderno; geralmente usado em código legado. | Preferido para variáveis que podem mudar de valor. | Usado para valores constantes que não devem mudar. |
 
-1. **Escopo:**
+**Escopo:**
    - **`var`:** O escopo é global ou de função, o que significa que uma variável declarada com `var` é acessível em qualquer lugar dentro da função onde foi declarada ou globalmente se estiver fora de qualquer função.
    - **`let` e `const`:** Ambos têm escopo de bloco, limitando seu acesso apenas ao bloco onde foram definidos (por exemplo, dentro de um loop ou uma estrutura condicional).
 
-2. **Reatribuição:**
+**Reatribuição:**
    - **`var`:** Permite reatribuições e redeclarações, o que pode levar a confusões se o mesmo nome for usado em diferentes partes do código.
    - **`let`:** Permite reatribuições, mas não a redeclaração no mesmo escopo, ajudando a evitar conflitos.
    - **`const`:** Não permite reatribuições ou redeclarações, sendo ideal para valores que não devem mudar após a sua definição.
 
-3. **Inicialização:**
+**Inicialização:**
    - **`var`:** Pode ser declarada sem um valor inicial e será automaticamente definida como `undefined`.
    - **`let`:** Também pode ser declarada sem um valor inicial, mas não deve ser usada antes de sua declaração.
    - **`const`:** Deve sempre ser inicializada na declaração; caso contrário, resultará em um erro.
 
-4. **Hoisting:**
+**Hoisting:**
    - O hoisting é um comportamento onde as declarações de variáveis são elevadas ao topo do seu contexto de execução.
    - Para `var`, isso significa que você pode usar a variável antes da sua declaração no código, embora seu valor seja `undefined`.
    - Para `let` e `const`, as variáveis são içadas, mas não podem ser acessadas antes da declaração, resultando em um erro.
 
-## Operadores =, == e ===
+## 3. Operadores =, == e ===
 
 Os operadores `=`, `==` e `===` em JavaScript têm funções distintas e são frequentemente utilizados em diferentes contextos. 
 
@@ -81,7 +81,7 @@ Os operadores `=`, `==` e `===` em JavaScript têm funções distintas e são fr
 
 
 
-## Estruturas de Controle
+## 4. Estruturas de Controle
 As estruturas de controle permitem a execução condicional ou repetitiva do código:
 - **Condicionais:**
   - `if`: Executa um bloco se a condição for verdadeira.
@@ -111,7 +111,7 @@ As estruturas de controle permitem a execução condicional ou repetitiva do có
     ```
 > :warning: Mesma Tipagem: Os valores nos cases *devem ser do mesmo tipo que a expressão do switch*. Por exemplo, se você estiver usando um switch com uma string, todos os cases também devem ser strings
 
-## Estruturas de Repetição
+## 5. Estruturas de Repetição
 As estruturas de repetição permitem executar um bloco de código várias vezes:
 - **for:** Utilizado para repetir um bloco um número específico de vezes.
   ```javascript
