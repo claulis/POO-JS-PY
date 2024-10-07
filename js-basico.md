@@ -1,5 +1,7 @@
 # Resumo de JavaScript
 
+## Tipos de dados
+
 | **Seção**                    | **Descrição**                                                                                      |
 |------------------------------|---------------------------------------------------------------------------------------------------|
 | **Variáveis**                | São usadas para armazenar dados que podem ser utilizados posteriormente no código.               |
@@ -12,9 +14,9 @@
 |                              | - **Object:** Estruturas que contêm propriedades e métodos. Exemplo: `let pessoa = { nome: "João", idade: 25 };` |
 |                              | - **Array:** Coleções de elementos indexados. Exemplo: `let frutas = ["maçã", "banana"];`       |
 
-As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para entender como gerenciar variáveis na linguagem. Cada um desses identificadores possui características específicas que influenciam seu comportamento em termos de escopo, reatribuição e hoisting. Aqui estão as principais distinções:
+## Variáveis e constantes 
 
-## Diferenças entre `var`, `let` e `const`
+As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para entender como gerenciar variáveis na linguagem. Cada um desses identificadores possui características específicas que influenciam seu comportamento em termos de escopo, reatribuição e hoisting.
 
 | **Característica**         | **`var`**                                         | **`let`**                                         | **`const`**                                      |
 |----------------------------|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
@@ -23,8 +25,6 @@ As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para
 | **Inicialização**          | Pode ser declarada sem inicialização (inicializa como `undefined`). | Pode ser declarada sem inicialização, mas não pode ser utilizada antes de sua declaração (ReferenceError). | Deve ser inicializada no momento da declaração.  |
 | **Hoisting**               | Variáveis são içadas para o topo do escopo e inicializadas como `undefined`. | Variáveis são içadas, mas não inicializadas, resultando em ReferenceError se acessadas antes da declaração. | Também sofre hoisting, mas não pode ser acessada antes da declaração. |
 | **Uso recomendado**        | Evitar em código moderno; geralmente usado em código legado. | Preferido para variáveis que podem mudar de valor. | Usado para valores constantes que não devem mudar. |
-
-### Explicação dos Conceitos
 
 1. **Escopo:**
    - **`var`:** O escopo é global ou de função, o que significa que uma variável declarada com `var` é acessível em qualquer lugar dentro da função onde foi declarada ou globalmente se estiver fora de qualquer função.
@@ -45,8 +45,43 @@ As diferenças entre `var`, `let` e `const` em JavaScript são fundamentais para
    - Para `var`, isso significa que você pode usar a variável antes da sua declaração no código, embora seu valor seja `undefined`.
    - Para `let` e `const`, as variáveis são içadas, mas não podem ser acessadas antes da declaração, resultando em um erro.
 
+## Operadores =, == e ===
 
-### Estruturas de Controle
+Os operadores `=`, `==` e `===` em JavaScript têm funções distintas e são frequentemente utilizados em diferentes contextos. 
+
+### Operador de Atribuição: `=`
+- **Descrição**: O operador `=` é utilizado para atribuir valores a variáveis. Por exemplo, em `x = 10`, o valor `10` é atribuído à variável `x`[2][4].
+- **Exemplo**:
+  ```javascript
+  let x = 5; // Atribui 5 à variável x
+  ```
+
+### Igualdade Ampla: `==`
+- **Descrição**: O operador `==` compara dois valores para verificar se são iguais, mas **não leva em consideração o tipo dos dados**. Isso significa que pode ocorrer uma conversão de tipo implícita (coerção) antes da comparação[1][3].
+- **Exemplo**:
+  ```javascript
+  console.log(5 == '5'); // Retorna true, pois '5' é convertido para número
+  ```
+
+### Igualdade Estrita: `===`
+- **Descrição**: O operador `===` compara tanto o valor quanto o tipo dos dados, ou seja, não realiza coerção de tipo. Para que a comparação retorne `true`, os valores devem ser exatamente iguais em tipo e valor[1][4].
+- **Exemplo**:
+  ```javascript
+  console.log(5 === '5'); // Retorna false, pois os tipos são diferentes (number vs string)
+  console.log(5 === 5);   // Retorna true, pois ambos são do mesmo tipo e valor
+  ```
+
+### Resumo das Diferenças
+
+| Operador | Tipo de Comparação              | Coerção de Tipo | Exemplo                | Resultado   |
+|----------|----------------------------------|------------------|------------------------|-------------|
+| `=`      | Atribuição                      | N/A              | `x = 10`               | Atribui 10 a x |
+| `==`     | Igualdade Ampla                 | Sim              | `5 == '5'`             | true        |
+| `===`    | Igualdade Estrita               | Não              | `5 === '5'`            | false       |
+
+
+
+## Estruturas de Controle
 As estruturas de controle permitem a execução condicional ou repetitiva do código:
 - **Condicionais:**
   - `if`: Executa um bloco se a condição for verdadeira.
@@ -74,8 +109,9 @@ As estruturas de controle permitem a execução condicional ou repetitiva do có
             console.log("Outro dia");
     }
     ```
+> :warning: Mesma Tipagem: Os valores nos cases *devem ser do mesmo tipo que a expressão do switch*. Por exemplo, se você estiver usando um switch com uma string, todos os cases também devem ser strings
 
-### Estruturas de Repetição
+## Estruturas de Repetição
 As estruturas de repetição permitem executar um bloco de código várias vezes:
 - **for:** Utilizado para repetir um bloco um número específico de vezes.
   ```javascript
