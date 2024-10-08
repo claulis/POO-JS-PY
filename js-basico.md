@@ -136,4 +136,108 @@ As estruturas de repetição permitem executar um bloco de código várias vezes
   } while (j < 5);
   ```
 
+As funções em JavaScript são blocos de código reutilizáveis que permitem organizar e executar tarefas específicas. Elas desempenham um papel fundamental na programação, facilitando a modularidade e a manutenção do código. Abaixo estão os principais tipos de funções, seus parâmetros, retornos e exemplos.
+
+## 6. Tipos de Funções em JavaScript
+
+### Funções Nomeadas (Function Declarations)
+As funções nomeadas são definidas usando a palavra-chave `function`, seguida pelo nome da função e parâmetros entre parênteses.
+
+**Exemplo:**
+```javascript
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
+```
+**Uso:**
+```javascript
+console.log(saudacao("Maria")); // Saída: Olá, Maria!
+```
+
+### Funções Anônimas (Function Expressions)
+Essas funções não possuem nome e são frequentemente atribuídas a variáveis.
+
+**Exemplo:**
+```javascript
+const soma = function(a, b) {
+    return a + b;
+};
+```
+**Uso:**
+```javascript
+console.log(soma(5, 3)); // Saída: 8
+```
+
+### Funções de Seta (Arrow Functions)
+Introduzidas no ECMAScript 6 (ES6), as funções de seta oferecem uma sintaxe mais concisa e não têm seu próprio contexto `this`.
+
+**Exemplo:**
+```javascript
+const dobrarNumero = (num) => num * 2;
+```
+**Uso:**
+```javascript
+console.log(dobrarNumero(4)); // Saída: 8
+```
+
+### Funções IIFE (Immediately Invoked Function Expressions)
+Essas funções são executadas imediatamente após serem definidas.
+
+**Exemplo:**
+```javascript
+(function() {
+    console.log("Essa função é imediatamente invocada!");
+})();
+```
+
+### Funções de Ordem Superior (Higher Order Functions)
+Essas funções podem receber outras funções como parâmetros ou retornar funções.
+
+**Exemplo:**
+```javascript
+function executar(funcao) {
+    funcao();
+}
+
+executar(() => console.log("Função de ordem superior!")); // Saída: Função de ordem superior!
+```
+
+### Funções Recursivas
+Essas funções chamam a si mesmas para resolver problemas que podem ser divididos em subproblemas.
+
+**Exemplo:**
+```javascript
+function fatorial(n) {
+    if (n === 0) return 1;
+    return n * fatorial(n - 1);
+}
+console.log(fatorial(5)); // Saída: 120
+```
+
+### 6.1 Parâmetros e Retornos
+
+#### Parâmetros
+Os parâmetros são variáveis que podem ser passadas para uma função. Eles são definidos entre parênteses na declaração da função.
+
+- **Parâmetros Opcionais:** Podem ser omitidos ao chamar a função.
+- **Parâmetros Padrão:** Podem ser definidos para assumir um valor caso nenhum argumento seja passado.
+
+**Exemplo com Parâmetros Padrão:**
+```javascript
+function multiplicar(a, b = 1) {
+    return a * b;
+}
+console.log(multiplicar(5)); // Saída: 5
+```
+
+#### Retornos
+Uma função retorna um valor usando a instrução `return`. Se não houver um `return`, o valor padrão retornado será `undefined`.
+
+**Exemplo:**
+```javascript
+function calcularArea(base, altura) {
+    return base * altura;
+}
+console.log(calcularArea(5, 10)); // Saída: 50
+```
 
