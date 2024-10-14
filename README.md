@@ -9,4 +9,5 @@ Sumário
 1. [Documentação Básica de Node.js](https://github.com/claulis/POO-JS-PY/blob/main/node-basico.md)
 2. [Documentação Básica de JavaScript](https://github.com/claulis/POO-JS-PY/blob/main/js-basico.md)
 3. [Python com VS Code](https://github.com/claulis/POO-JS-PY/blob/main/python-vc.md)
+4. [Python no Google Colab](https://github.com/claulis/POO-JS-PY/blob/main/python-colab.md)
 
