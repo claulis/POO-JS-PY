@@ -235,6 +235,115 @@ match variável:
            print("Fruta desconhecida.")
    ```
 
+Claro! Vamos abordar os tipos de laços de repetição em Python. Os laços (ou loops) são fundamentais para executar um bloco de código várias vezes, dependendo de uma condição. Aqui estão os principais tipos de laços em Python:
+
+## 7. Laços de Repetição 
+
+Os laços permitem que um bloco de código seja executado repetidamente, o que é essencial para a automação de tarefas e processamento de coleções de dados.
+
+### Tipos de Laços
+
+1. **Laço `for`**
+   - O laço `for` é usado para iterar sobre uma sequência (como uma lista, tupla, string ou range). É útil quando você sabe quantas vezes deseja executar o bloco de código.
+
+   **Sintaxe:**
+   ```python
+   for item in sequência:
+       # Código a ser executado
+   ```
+
+   **Exemplo:**
+   ```python
+   frutas = ["maçã", "banana", "laranja"]
+   for fruta in frutas:
+       print(fruta)
+   ```
+
+   **Exemplo com `range`:**
+   ```python
+   for i in range(5):
+       print(i)
+   ```
+
+2. **Laço `while`**
+   - O laço `while` continua executando um bloco de código enquanto uma condição for verdadeira. É útil quando o número de iterações não é conhecido previamente.
+
+   **Sintaxe:**
+   ```python
+   while condição:
+       # Código a ser executado
+   ```
+
+   **Exemplo:**
+   ```python
+   contador = 0
+   while contador < 5:
+       print(contador)
+       contador += 1
+   ```
+
+### Controle de Laços
+
+1. **`break`**
+   - A instrução `break` é usada para sair de um laço, interrompendo sua execução imediatamente.
+
+   **Exemplo:**
+   ```python
+   for i in range(10):
+       if i == 5:
+           break
+       print(i)
+   ```
+
+2. **`continue`**
+   - A instrução `continue` faz com que o laço ignore a iteração atual e continue com a próxima.
+
+   **Exemplo:**
+   ```python
+   for i in range(10):
+       if i % 2 == 0:
+           continue
+       print(i)  # Imprime apenas números ímpares
+   ```
+
+3. **`else` em Laços**
+   - Você pode adicionar uma cláusula `else` a um laço. O código dentro do `else` será executado quando o laço terminar normalmente (ou seja, não foi interrompido por um `break`).
+
+   **Exemplo:**
+   ```python
+   for i in range(5):
+       print(i)
+   else:
+       print("Laço concluído!")
+   ```
+
+### Exercícios Práticos
+
+1. **Contagem Regressiva**
+   - Escreva um programa que faça uma contagem regressiva de 10 a 0.
+
+   **Sugestão de código:**
+   ```python
+   contador = 10
+   while contador >= 0:
+       print(contador)
+       contador -= 1
+   ```
+
+2. **Soma de Números**
+   - Escreva um programa que leia números até que o usuário digite 0 e exiba a soma dos números digitados.
+
+   **Sugestão de código:**
+   ```python
+   soma = 0
+   numero = None
+   while numero != 0:
+       numero = int(input("Digite um número (0 para sair): "))
+       soma += numero
+   print("A soma é:", soma)
+   ```
+
+
 
 
 
