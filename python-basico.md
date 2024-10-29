@@ -97,4 +97,83 @@ soma = numero1 + numero2
 # Saída de dados
 print(f"A soma de {numero1} e {numero2} é {soma}.")
 ```
+## 6. Estrutura Condicional
+As estruturas condicionais permitem que o programa execute diferentes blocos de código com base em condições específicas. Isso é essencial para a lógica de programação e para a criação de aplicações dinâmicas.
+
+### Estrutura Geral
+
+```python
+if condição1:
+    # Código a ser executado se condição1 for verdadeira
+elif condição2:
+    # Código a ser executado se condição1 for falsa e condição2 for verdadeira
+else:
+    # Código a ser executado se todas as condições anteriores forem falsas
+```
+
+### If Else
+
+1. **If**
+   - A instrução `if` é usada para verificar uma condição. Se a condição for verdadeira, o bloco de código associado é executado.
+
+   **Exemplo:**
+   ```python
+   idade = 18
+   if idade >= 18:
+       print("Você é maior de idade.")
+   ```
+
+2. **Else**
+   - A instrução `else` é usada como uma alternativa. Se a condição do `if` for falsa, o bloco de código no `else` será executado.
+
+   **Exemplo:**
+   ```python
+   idade = 16
+   if idade >= 18:
+       print("Você é maior de idade.")
+   else:
+       print("Você é menor de idade.")
+   ```
+
+3. **Elif (Else If)**
+   - O `elif` permite verificar múltiplas condições. Se a condição do `if` for falsa, o programa verifica a condição do `elif`. Você pode ter quantos `elif` quiser.
+
+   **Exemplo:**
+   ```python
+   nota = 75
+   if nota >= 90:
+       print("Aprovado com Distinção.")
+   elif nota >= 70:
+       print("Aprovado.")
+   else:
+       print("Reprovado.")
+   ```
+#### Exercícios Práticos
+
+1. **Verificação de Paridade**
+   - Programa que verifique se um número é par ou ímpar.
+
+   **Sugestão de código:**
+   ```python
+   numero = int(input("Digite um número: "))
+   if numero % 2 == 0:
+       print("O número é par.")
+   else:
+       print("O número é ímpar.")
+   ```
+
+2. **Classificação de Idade**
+   - Programa que classifique uma pessoa como criança, adolescente ou adulto com base na idade.
+
+   **Sugestão de código:**
+   ```python
+   idade = int(input("Digite a sua idade: "))
+   if idade < 12:
+       print("Você é uma criança.")
+   elif idade < 18:
+       print("Você é um adolescente.")
+   else:
+       print("Você é um adulto.")
+   ```
+
 
