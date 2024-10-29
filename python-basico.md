@@ -177,3 +177,66 @@ else:
    ```
 
 
+### match-case 
+
+A estrutura `match-case` permite que você verifique uma variável contra múltiplos padrões de maneira organizada. É especialmente útil em casos onde você precisa lidar com vários casos diferentes para uma única variável.
+
+### Sintaxe Básica
+
+A sintaxe básica do `match-case` é a seguinte:
+
+```python
+match variável:
+    case padrão1:
+        # Código para padrão1
+    case padrão2:
+        # Código para padrão2
+    case _:
+        # Código para outros casos (caso padrão)
+```
+
+### Exemplos Práticos
+
+1. **Uso Básico**
+
+   Vamos considerar um exemplo simples onde classificamos um dia da semana:
+
+   ```python
+   dia = "terça"
+
+   match dia:
+       case "segunda":
+           print("Hoje é segunda-feira.")
+       case "terça":
+           print("Hoje é terça-feira.")
+       case "quarta":
+           print("Hoje é quarta-feira.")
+       case "quinta":
+           print("Hoje é quinta-feira.")
+       case "sexta":
+           print("Hoje é sexta-feira.")
+       case _:
+           print("É um dia do fim de semana ou um dia inválido.")
+   ```
+
+2. **Correspondência de Padrões**
+
+   Você pode usar várias condições em um único `case`:
+
+   ```python
+   fruta = "maçã"
+
+   match fruta:
+       case "maçã" | "banana":
+           print("Fruta comum.")
+       case "abacaxi":
+           print("Fruta tropical.")
+       case _:
+           print("Fruta desconhecida.")
+   ```
+
+
+
+
+
+
