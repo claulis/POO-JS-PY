@@ -11,6 +11,6 @@ Sumário
 3. [Python com VS Code](https://github.com/claulis/POO-JS-PY/blob/main/py/python-vc.md)
 4. [Python no Google Colab](https://github.com/claulis/POO-JS-PY/blob/main/py/python-colab.md)
 5. [Python básico](https://github.com/claulis/POO-JS-PY/blob/main/py/python-basico.md)
-6. [Os 4 Pilares da POO]https://github.com/claulis/POO-JS-PY/blob/main/py/python-basico.md)
+6. [Os 4 Pilares da POO](https://github.com/claulis/POO-JS-PY/blob/main/py/python-basico.md)
 7. [Classes e Objetos em JS](https://github.com/claulis/POO-JS-PY/tree/main/js/classes%20e%20objetos)
 8. [Herança em JS](https://github.com/claulis/POO-JS-PY/tree/main/js/Heran%C3%A7a)
