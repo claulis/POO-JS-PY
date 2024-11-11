@@ -11,4 +11,5 @@ Sumário
 3. [Python com VS Code](https://github.com/claulis/POO-JS-PY/blob/main/python-vc.md)
 4. [Python no Google Colab](https://github.com/claulis/POO-JS-PY/blob/main/python-colab.md)
 5. [Python básico](https://github.com/claulis/POO-JS-PY/blob/main/python-basico.md)
-
+6. [Os 4 Pilares da POO](https://github.com/claulis/POO-JS-PY/blob/main/oo_teoria.md)
+7. [Classes e Objetos em JS]()
