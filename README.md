@@ -12,4 +12,4 @@ Sumário
 4. [Python no Google Colab](https://github.com/claulis/POO-JS-PY/blob/main/python-colab.md)
 5. [Python básico](https://github.com/claulis/POO-JS-PY/blob/main/python-basico.md)
 6. [Os 4 Pilares da POO](https://github.com/claulis/POO-JS-PY/blob/main/oo_teoria.md)
-7. [Classes e Objetos em JS]()
+7. [Classes e Objetos em JS](https://github.com/claulis/POO-JS-PY/tree/main/js/classes%20e%20objetos)
