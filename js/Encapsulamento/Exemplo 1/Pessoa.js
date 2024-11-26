@@ -4,23 +4,26 @@ class Pessoa {
     #idade;
   
     // Construtor da classe
-    constructor(nome, idade) {
-      this.#nome = nome;   // Atribuindo valor ao membro privado #nome
-      this.#idade = idade; // Atribuindo valor ao membro privado #idade
+    constructor() {
+      this.#nome;   // Atribuindo valor ao membro privado #nome
+      this.#idade; // Atribuindo valor ao membro privado #idade
     }
   
     // Método público para acessar o nome (getter)
-    obterNome() {
+    get obterNome() {
       return this.#nome;   // Retorna o valor de #nome
     }
   
     // Método público para acessar a idade (getter)
-    obterIdade() {
+    get obterIdade() {
       return this.#idade;  // Retorna o valor de #idade
     }
   
     // Método público para alterar o nome (setter)
-    definirNome(novoNome) {
+    /**
+   * @param {(arg0: string) => void} novoNome
+   */
+    set definirNome(novoNome) {
       if (typeof novoNome === 'string' && novoNome.length > 0) {
         this.#nome = novoNome;
       } else {
@@ -29,7 +32,10 @@ class Pessoa {
     }
   
     // Método público para alterar a idade (setter)
-    definirIdade(novaIdade) {
+    /**
+   * @param {(arg0: number) => void} novaIdade
+   */
+    set definirIdade(novaIdade) {
       if (novaIdade >= 0) {
         this.#idade = novaIdade;
       } else {
@@ -43,11 +49,7 @@ class Pessoa {
     }
   }
   
-  // Criando uma instância da classe Pessoa
-  const pessoa1 = new Pessoa('João', 25);
-  
-  // Usando os métodos públicos para acessar os membros privados
-  console.log(pessoa1.mostrarInformacoes()); // Nome: João, Idade: 25
+  const pessoa1 = new Pessoa();
   
   // Tentando acessar diretamente os membros privados (isso causará erro) , tire o comentário das linhas abaixo e teste
   //console.log(pessoa1.#nome);  
@@ -56,8 +58,8 @@ class Pessoa {
   // Error: Private field '#idade' must be declared in an enclosing class
   
   // Modificando os membros privados através dos métodos setters
-  pessoa1.definirNome('Carlos');
-  pessoa1.definirIdade(30);
+  pessoa1.definirNome='Carlos';
+  pessoa1.definirIdade=30;
   
   // Acessando os dados modificados através dos getters
   console.log(pessoa1.mostrarInformacoes()); // Nome: Carlos, Idade: 30
