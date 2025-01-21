@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mysql2": "^3.12.0"
+  },
+  "name": "agendamento",
+  "version": "1.0.0",
+  "main": "Menu.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
