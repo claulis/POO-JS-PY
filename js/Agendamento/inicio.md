@@ -67,8 +67,14 @@ Para importar o script:
 Após a importação:
 - Verifique se as tabelas foram criadas corretamente
 
+## 3. Criação do projeto
 
-## 3. Instalação do mysql2
+1. Baixe os arquivos em uma pasta
+2. Execute este comando
+```Bash
+npm init
+
+## 4. Instalação do mysql2
 Para instalar o pacote mysql2 via npm, você pode usar um dos seguintes comandos:
 
 ```Bash
@@ -95,5 +101,6 @@ const mysql = require('mysql2');
 // Ou usando import (se estiver usando ES modules),esse metodo é o mais indicado
 import mysql from 'mysql2';
 ```
+
 
 
